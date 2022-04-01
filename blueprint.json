@@ -13,7 +13,7 @@
 		{
 			"type": "embed",
 			"target": {
-				"repository": "https://github.com/v2Blueprints/aws_vpc"
+				"repository": "https://github.com/v2Blueprints/aws-vpc"
 			},
 			"configuration": {
 				"cidr_block": "10.111.0.0/16",
@@ -25,7 +25,7 @@
 				"repository": "https://github.com/v2Blueprints/aws-subnet"
 			},
 			"configuration": {
-			     "vpc_id" : "bindings[https://github.com/v2Blueprints/aws_vpc[0]].id",
+			     "vpc_id" : "bindings[https://github.com/v2Blueprints/aws-vpc[0]].id",
 				"cidr_block": "10.111.111.0/24",
 				"Name" : "Subnet_A"
 			}
@@ -34,7 +34,7 @@
 				"repository": "https://github.com/v2Blueprints/aws-subnet"
 			},
 			"configuration": {
-			     "vpc_id" : "bindings[https://github.com/v2Blueprints/aws_vpc[0]].id",
+			     "vpc_id" : "bindings[https://github.com/v2Blueprints/aws-vpc[0]].id",
 				"cidr_block": "10.111.222.0/24",
 				"Name" : "Subnet_B"
 			}
