@@ -38,6 +38,32 @@
 				"cidr_block": "10.111.222.0/24",
 				"Name" : "Subnet_B"
 			}
+		},{
+		"target": {
+				"repository": "https://github.com/v2Blueprints/aws_ecs"
+				},
+					"configuration": {
+					"name": "douga",
+					"desired_count": 1
+					}
+		},{
+		"target": {
+				"repository": "https://github.com/v2Blueprints/aws_ecs"
+				},
+					"configuration": {
+					"name": "dougb",
+					"desired_count": 1
+					}
+		}
+		,{
+		"target": {
+				"repository": "https://github.com/v2Blueprints/aws-igw"
+				}
+		}
+		,{
+		"target": {
+				"repository": "https://github.com/v2Blueprints/dougs_route_table"
+				}
 		}
 	]
 }
