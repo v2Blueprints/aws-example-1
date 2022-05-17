@@ -11,7 +11,6 @@
 	},
 	"bindings": [
 		{
-			"type": "embed",
 			"target": {
 				"repository": "https://github.com/v2Blueprints/aws-vpc"
 			},
@@ -44,28 +43,41 @@
 				"repository": "https://github.com/v2Blueprints/aws_ecs"
 			},
 			"configuration": {
-				"name": "douga",
-				"desired_count": 1
+				"name": "doug-ecs"
+			}
+		},
+		
+		{
+			"target": {
+				"repository": "https://github.com/v2Blueprints/doug_ecs_task_definitions"
+			},
+			"configuration": {
+				"name": "dougs-tasks"
 			}
 		},
 		{
 			"target": {
-				"repository": "https://github.com/v2Blueprints/aws_ecs"
+				"repository": "https://github.com/v2Blueprints/aws_ecs_cluster"
 			},
 			"configuration": {
-				"name": "dougb",
-				"desired_count": 1
+				"name": "doug-cluster"
 			}
 		},
 		{
 			"target": {
 				"repository": "https://github.com/v2Blueprints/aws-igw"
+			},
+			"configuration": {
+				"name": "vpc-gw"
 			}
 		},
 		{
 			"target": {
 				"repository": "https://github.com/v2Blueprints/dougs_route_table"
+			},
+			"configuration": {
+				"name": "vpc-route"
 			}
-		}
+		}		
 	]
 }
