@@ -68,7 +68,7 @@
 				"repository": "https://github.com/v2Blueprints/aws-igw"
 			},
 			"configuration": {
-				"name": "vpc-gw"
+				"name": "aws-test-gw"
 			}
 		},
 		{
