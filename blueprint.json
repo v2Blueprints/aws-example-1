@@ -40,7 +40,7 @@
 		},
 		{
 			"target": {
-				"repository": "https://github.com/v2Blueprints/aws_ecs"
+				"repository": "https://github.com/v2Blueprints/aws-ecs"
 			},
 			"configuration": {
 				"name": "doug-ecs"
@@ -49,7 +49,7 @@
 		
 		{
 			"target": {
-				"repository": "https://github.com/v2Blueprints/doug_ecs_task_definitions"
+				"repository": "https://github.com/v2Blueprints/doug-ecs-task-definitions"
 			},
 			"configuration": {
 				"name": "dougs-tasks"
@@ -57,7 +57,7 @@
 		},
 		{
 			"target": {
-				"repository": "https://github.com/v2Blueprints/aws_ecs_cluster"
+				"repository": "https://github.com/v2Blueprints/aws-ecs-cluster"
 			},
 			"configuration": {
 				"name": "doug-cluster"
@@ -73,7 +73,7 @@
 		},
 		{
 			"target": {
-				"repository": "https://github.com/v2Blueprints/dougs_route_table"
+				"repository": "https://github.com/v2Blueprints/dougs-route-table"
 			},
 			"configuration": {
 				"name": "vpc-route"
