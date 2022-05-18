@@ -49,7 +49,7 @@
 		
 		{
 			"target": {
-				"repository": "https://github.com/v2Blueprints/doug-ecs-task-definitions"
+				"repository": "https://github.com/v2Blueprints/dougs-ecs-task-definitions"
 			},
 			"configuration": {
 				"name": "dougs-tasks"
