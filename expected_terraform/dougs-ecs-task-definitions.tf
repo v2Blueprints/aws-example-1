@@ -27,6 +27,7 @@ resource "aws_ecs_task_definition" "billing-engine_ecs_task_definition" {
         }
       ]
     }
+    
 resource "aws_ecs_task_definition" "longitude_ecs_task_definition" {
       name      = "longitude"
       image     = "longitude"
@@ -53,7 +54,8 @@ resource "aws_ecs_task_definition" "sura_ecs_task_definition"  {
           hostPort      = 443
         }
       ]
-    },
+    }
+    
 resource "aws_ecs_task_definition" "opta_ecs_task_definition"     {
       name      = "opta"
       image     = "opta"
@@ -67,5 +69,4 @@ resource "aws_ecs_task_definition" "opta_ecs_task_definition"     {
         }
       ]
     }
-  ])
-  }
+  
