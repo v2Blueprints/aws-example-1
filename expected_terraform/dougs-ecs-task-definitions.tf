@@ -67,3 +67,4 @@ resource "aws_ecs_task_definition" "doug_ecs_task_definitions" {
       ]
     }
   ])
+  }
