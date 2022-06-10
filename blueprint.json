@@ -12,7 +12,7 @@
 	"bindings": [
 		{
 			"target": {
-				"repository": "https://github.com/v2Blueprints/aws-vpc"
+				"repository": "https://github.com/EnginesAWS/vpc"
 			},
 			"configuration": {
 				"cidr_block": "10.111.0.0/16",
@@ -21,26 +21,24 @@
 		},
 		{
 			"target": {
-				"repository": "https://github.com/v2Blueprints/aws-subnet"
+				"repository": "https://github.com/EnginesAWS/subnet"
 			},
 			"configuration": {
-				"vpc_id" : "bindings[https://github.com/v2Blueprints/aws-vpc[0]].id",
 				"cidr_block": "10.111.111.0/24",
 				"Name" : "Subnet_A"
 			}
 		},{
 			"target": {
-				"repository": "https://github.com/v2Blueprints/aws-subnet"
+				"repository": "https://github.com/EnginesAWS/subnet"
 			},
 			"configuration": {
-				"vpc_id" : "bindings[https://github.com/v2Blueprints/aws-vpc[0]].id",
 				"cidr_block": "10.111.222.0/24",
 				"Name" : "Subnet_B"
 			}
 		},
 		{
 			"target": {
-				"repository": "https://github.com/v2Blueprints/aws-ecs"
+				"repository": "https://github.com/EnginesAWS/container-service"
 			},
 			"configuration": {
 				"name": "doug-ecs"
@@ -57,7 +55,7 @@
 		},
 		{
 			"target": {
-				"repository": "https://github.com/v2Blueprints/aws-ecs-cluster"
+				"repository": "https://github.com/EnginesAWS/startup-service-cluster"
 			},
 			"configuration": {
 				"name": "doug-cluster"
@@ -65,7 +63,7 @@
 		},
 		{
 			"target": {
-				"repository": "https://github.com/v2Blueprints/aws-igw"
+				"repository": "https://github.com/EnginesAWS/internet-gateway"
 			},
 			"configuration": {
 				"name": "aws-test-gw"
@@ -73,7 +71,7 @@
 		},
 		{
 			"target": {
-				"repository": "https://github.com/v2Blueprints/dougs-route-table"
+				"repository": "https://github.com/EnginesAWS/startup-route-table"
 			},
 			"configuration": {
 				"name": "vpc-route"
