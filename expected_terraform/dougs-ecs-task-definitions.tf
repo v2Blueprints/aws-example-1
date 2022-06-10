@@ -1,7 +1,5 @@
-resource "aws_ecs_task_definition" "doug_ecs_task_definitions" {
+resource "aws_ecs_task_definition" "abs_ecs_task_definition" {
   family = "service"
-  container_definitions = jsonencode([
-    {
       name      = "abs"
       image     = "abs"
       cpu       = 10
@@ -13,8 +11,10 @@ resource "aws_ecs_task_definition" "doug_ecs_task_definitions" {
           hostPort      = 80
         }
       ]
-    },
-    {
+    }
+    
+    
+resource "aws_ecs_task_definition" "billing-engine_ecs_task_definition" {  
       name      = "billing-engine"
       image     = "billing-engine"
       cpu       = 10
@@ -26,8 +26,8 @@ resource "aws_ecs_task_definition" "doug_ecs_task_definitions" {
           hostPort      = 443
         }
       ]
-    },
-    {
+    }
+resource "aws_ecs_task_definition" "longitude_ecs_task_definition" {
       name      = "longitude"
       image     = "longitude"
       cpu       = 10
@@ -39,8 +39,9 @@ resource "aws_ecs_task_definition" "doug_ecs_task_definitions" {
           hostPort      = 443
         }
       ]
-    },
-    {
+    }
+
+resource "aws_ecs_task_definition" "sura_ecs_task_definition"  {
       name      = "sura"
       image     = "sura"
       cpu       = 10
@@ -53,7 +54,7 @@ resource "aws_ecs_task_definition" "doug_ecs_task_definitions" {
         }
       ]
     },
-    {
+resource "aws_ecs_task_definition" "opta_ecs_task_definition"     {
       name      = "opta"
       image     = "opta"
       cpu       = 10
