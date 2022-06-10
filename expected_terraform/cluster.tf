@@ -3,7 +3,6 @@ resource "aws_kms_key" "cluster-key" {
   deletion_window_in_days = 10
   is_enabled = true
   enable_key_rotation = false
-  multi_region = false
 }
 
 resource "aws_cloudwatch_log_group" "Dougs-cluster-logs" {
@@ -20,7 +19,7 @@ resource "aws_ecs_cluster" "Dougs-Cluster" {
 
       log_configuration {
         cloud_watch_encryption_enabled = true
-        cloud_watch_log_group_name     = aws_cloudwatch_log_group.Dougs-cluster-logs.name
+        cloud_watch_log_group_name = aws_cloudwatch_log_group.Dougs-cluster-logs.name
       }
     }
   }

@@ -10,6 +10,10 @@ resource "aws_ecs_service" "billing-engine" {
     type  = "binpack"
     field = "cpu"
   }
+  
+  depends_on = [
+    aws_ecs_task_definition.doug_ecs_task_definitions
+  ]
   }
   
   resource "aws_ecs_service" "longitude" {
@@ -24,6 +28,10 @@ resource "aws_ecs_service" "billing-engine" {
     type  = "binpack"
     field = "cpu"
   }
+  
+  depends_on = [
+    aws_ecs_task_definition.doug_ecs_task_definitions
+  ]
   }
   
   resource "aws_ecs_service" "sura" {
@@ -38,6 +46,10 @@ resource "aws_ecs_service" "billing-engine" {
     type  = "binpack"
     field = "cpu"
   }
+  
+  depends_on = [
+    aws_ecs_task_definition.doug_ecs_task_definitions
+  ]
   }
       resource "aws_ecs_service" "opta" {
   name            = "opta"
@@ -51,6 +63,10 @@ resource "aws_ecs_service" "billing-engine" {
     type  = "binpack"
     field = "cpu"
   }
+  
+  depends_on = [
+    aws_ecs_task_definition.doug_ecs_task_definitions
+  ]
   }
   
   
