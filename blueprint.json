@@ -16,7 +16,7 @@
 			},
 			"configuration": {
 				"cidr_block": "10.111.0.0/16",
-				"Name" : "VPC_A"
+				"Name": "VPC_A"
 			}
 		},
 		{
@@ -25,15 +25,16 @@
 			},
 			"configuration": {
 				"cidr_block": "10.111.111.0/24",
-				"Name" : "Subnet_A"
+				"Name": "Subnet_A"
 			}
-		},{
+		},
+		{
 			"target": {
 				"repository": "https://github.com/EnginesAWS/subnet"
 			},
 			"configuration": {
 				"cidr_block": "10.111.222.0/24",
-				"Name" : "Subnet_B"
+				"Name": "Subnet_B"
 			}
 		},
 		{
@@ -44,7 +45,6 @@
 				"name": "doug-ecs"
 			}
 		},
-		
 		{
 			"target": {
 				"repository": "https://github.com/v2Blueprints/dougs-ecs-task-definitions"
@@ -76,6 +76,17 @@
 			"configuration": {
 				"name": "vpc-route"
 			}
-		}		
+		},
+		{
+			"target": {
+				"repository": "https://github.com/EnginesAWS/iam-role"
+			},
+			"configuration": {
+				"name": "cluster-iam-role",
+				"action": "sts:AssumeRole",
+				"Effect": "Allow",
+				"Service": "ec2.amazonaws.com"
+			}
+		}
 	]
 }
